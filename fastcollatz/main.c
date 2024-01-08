@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
 
 
     /* check inputs*/
-    if(argc != 3) {
+    if(argc < 3) {
         printf("unexpected number of arguments\n");
         return -1;
     }
@@ -38,10 +38,11 @@ int main(int argc, char **argv) {
     
     printf("%zu\n", searchupto);
     printf("%d\n", numforks);
-
-    if (!(check_power_of_two(numforks)) || (numforks > 100))   {
-        printf("you need a forking number of 1, 2, 4, 8\n");
-        return -1;
+    if (argv < 4) { //builtin manual override
+        if (!(check_power_of_two(numforks)) || (numforks > 100))   {
+            printf("you need a forking number of a power of two, and if you're not on armlab probably keep it 8 or less\n");
+            return -1;
+        }
     }
     
 

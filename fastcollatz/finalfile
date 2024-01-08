@@ -1,8 +1,8 @@
-For min 0 and max 134217728, we found number 113294448 with length 953
+For min 0 and max 134217728, we found number 127456255 with length 950
 For min 134217728 and max 268435456, we found number 226588897 with length 956
-For min 268435456 and max 402653184, we found number 358066404 with length 966
-For min 402653184 and max 536870912, we found number 402824705 with length 962
+For min 268435456 and max 402653184, we found number 339883345 with length 954
+For min 402653184 and max 536870912, we found number 509825021 with length 952
 For min 536870912 and max 671088640, we found number 670617279 with length 986
-For min 671088640 and max 805306368, we found number 716132809 with length 968
-For min 805306368 and max 939524096, we found number 848749995 with length 976
-For min 939524096 and max 1073741824, we found number 1005925919 with length 984
+For min 671088640 and max 805306368, we found number 764737533 with length 950
+For min 805306368 and max 939524096, we found number 906355587 with length 958
+For min 939524096 and max 1073741824, we found number 1019650037 with length 953

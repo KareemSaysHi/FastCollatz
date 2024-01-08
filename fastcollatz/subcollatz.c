@@ -19,7 +19,7 @@ size_t collatzLength(size_t number) {
 
 void biggestCollatz(size_t howLow, size_t howHigh, size_t *maxLen, size_t *maxNum ) {
     size_t resultingcalc;
-    for (size_t i = howLow; i < howHigh + 1; i++) {
+    for (size_t i = (howLow+howHigh)/2; i < howHigh + 1; i++) {
 
         if (3*i % 4 == 0) {
             if (3 * i / 4 == *maxNum) {
@@ -27,13 +27,13 @@ void biggestCollatz(size_t howLow, size_t howHigh, size_t *maxLen, size_t *maxNu
                 *maxNum = i;
             }
         }
-        if (i % 2 != 0) {
+        if (i % 2 != 0) { /* if i is even then we don't need to check it*/
             resultingcalc = collatzLength(i);
             if ((*maxLen) < resultingcalc) {
                 *maxLen = resultingcalc;
                 *maxNum = i;
             }
-        } else if (i / 2 == *maxNum) {
+        } else if (i / 2 == *maxNum) { /* we just have to check if it's 2 times maxnum*/
             *maxLen = *maxLen +1;
             *maxNum = i;
         }
