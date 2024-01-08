@@ -57,9 +57,9 @@ int main(int argc, char **argv) {
 
     biggestCollatz(min, max, &maxLen, &maxNum);
 
-    fptr = fopen(argv[1], "w");
-    fprintf(fptr, "For min %lu and max %lu, we found number %lu with length %lu\n", min, max, maxNum, maxLen);
-    fclose(fptr);
+        fptr = fopen(argv[1], "w");
+        fprintf(fptr, "For min %lu and max %lu, we found number %lu with length %lu\n", min, max, maxNum, maxLen);
+        fclose(fptr);
 
     return 0;
     
