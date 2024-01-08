@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
     printf("%zu\n", searchupto);
     printf("%d\n", numforks);
 
-    if (!(check_power_of_two(numforks)) || (numforks > 8))   {
+    if (!(check_power_of_two(numforks)) || (numforks > 100))   {
         printf("you need a forking number of 1, 2, 4, 8\n");
         return -1;
     }
