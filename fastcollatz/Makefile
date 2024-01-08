@@ -6,6 +6,7 @@ clobber: clean
 clean: 
 	rm -f file*
 	rm -f finalfile
+	rm -f *.o
 
 # Dependency rules for file targets
 main: main.o
